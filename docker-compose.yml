@@ -3,7 +3,7 @@ services:
   jupyterlabplayground:
     build: .
     ports:
-    - 8888:8899
+    - 8899:8888
     volumes:
     - ./README.md:/root/data-science-playground/README.md
     - ./notebooks:/root/data-science-playground/notebooks
