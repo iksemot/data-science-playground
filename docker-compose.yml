@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jupyterlabplayground:
+    build: .
+    ports:
+    - 8888:8899
+    volumes:
+    - ./README.md:/root/data-science-playground/README.md
+    - ./notebooks:/root/data-science-playground/notebooks
+    # - ./jupyter-config:/root/.jupyter
+    container_name: jupyterlabplayground
